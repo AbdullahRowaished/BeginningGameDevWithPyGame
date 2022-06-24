@@ -1,12 +1,12 @@
-background_image_filename = 'sushiplate.jpg'
+background_image_filename = '../sushiplate.jpg'
 
 import pygame
 from pygame.locals import *
 from sys import exit
 
 pygame.init()
-screen = pygame.display.set_mode((640, 480), 0, 32)
-background = pygame.image.load(background_image-filename).convert()
+screen = pygame.display.set_mode((600, 480), 0, 32)
+background = pygame.image.load(background_image_filename).convert()
 
 x, y = 0, 0
 move_x, move_y = 0, 0

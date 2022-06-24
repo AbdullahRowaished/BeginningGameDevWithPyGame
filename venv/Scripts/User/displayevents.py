@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import *
 from sys import exit
+import math
 
 pygame.init()
 

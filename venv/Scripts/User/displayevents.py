@@ -25,7 +25,7 @@ while True:
 
     y = SCREEN_SIZE[1]-font_height
     for text in reversed(event_text):
-        scree.blit( font.render(text, True, (0, 0, 0)), (0, y) )
+        screen.blit( font.render(text, True, (0, 0, 0)), (0, y) )
         y-=font_height
 
     pygame.display.update()

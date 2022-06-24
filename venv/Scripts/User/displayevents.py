@@ -21,7 +21,7 @@ while True:
     if event.type == QUIT:
         exit()
 
-    screen.fill(255, 255, 255)
+    screen.fill((255, 255, 255))
 
     y = SCREEN_SIZE[1]-font_height
     for text in reversed(event_text):

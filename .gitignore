@@ -1,2 +1,5 @@
 venv/*
-!venv/Scripts/User/*
+!venv/Scripts/
+
+venv/Scripts/*
+!venv/Scripts/User/

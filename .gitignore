@@ -1,15 +1,2 @@
-/venv/Scripts/activate
-/venv/Scripts/activate.bat
-/venv/Scripts/Activate.ps1
-/venv/Scripts/fugu.png
-/venv/Scripts/pip.exe
-/venv/Scripts/pip3.10.exe
-/venv/Scripts/pip3.exe
-/venv/Scripts/python.exe
-/venv/Scripts/pythonw.exe
-/venv/Scripts/sushiplate.jpg
-/venv/Scripts/deactivate.bat
-
-/venv/Lib/
-/venv/Include/
-/venv/pyvenv.cfg
+venv/*
+!venv/Scripts/User/*

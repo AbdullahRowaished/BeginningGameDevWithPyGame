@@ -1,3 +1,4 @@
+!/venv/Scripts/
+!/venv/Scripts/helloworld.py
 # Project exclude paths
 /venv/
-!/venv/Scripts

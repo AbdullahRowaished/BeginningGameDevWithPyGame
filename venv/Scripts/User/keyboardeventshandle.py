@@ -35,8 +35,8 @@ while True:
                 elif event.key == K_DOWN:
                     move_y = 0
 
-        x+= move_x
-        y+= move_y
+        x += move_x
+        y += move_y
 
         screen.fill((0, 0, 0))
         screen.blit(background, (x, y))

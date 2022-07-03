@@ -1,5 +1,4 @@
 from math import sqrt
-from util import format_number
 
 class Vector2(object):
     
@@ -80,8 +79,9 @@ class Vector2(object):
     
     def get_y(self):
         return self._v[1]
+
     def set_y(self, y):
-        assert isinstance(x, float), "Must be a float"
+        assert isinstance(y, float), "Must be a float"
         self._v[1] = y
     y = property(get_y, set_y, None, "y component.")
         
@@ -91,7 +91,7 @@ class Vector2(object):
     def __str__(self):
         
         x, y = self._v
-        return "(%s, %s)" % (format_number(x), format_number(y))
+        return "(%s, %s)" % (str(x), str(y))
     
     def __repr__(self):
         
@@ -111,8 +111,8 @@ class Vector2(object):
         """Gets a component as though the vector were a list."""
         try:
             return self._v[index]
-        except IndexError:        
-            raise IndexError, "There are 2 values in this object, index should be 0 or 1"    
+        except IndexError:
+            raise IndexError("There are 2 values in this object, index should be 0 or 1")
             
     def __setitem__(self, index, value):
         """Sets a component as though the vector were a list."""
@@ -120,8 +120,8 @@ class Vector2(object):
         assert isinstance(value, float), "Must be a float"
         try:
             self._v[index] = value
-        except IndexError:        
-            raise IndexError, "There are 2 values in this object, index should be 0 or 1!"        
+        except IndexError:
+            raise IndexError("There are 2 values in this object, index should be 0 or 1!")
      
      
     def __eq__(self, rhs):
@@ -209,7 +209,7 @@ class Vector2(object):
         return self.from_floats(x*xx, y*yy)
         
         
-    def __div__(self, rhs):
+    def __truediv__(self, rhs):
         """Return the result of dividing this vector by a scalar or a vector-list object."""
         x, y = self._v
         if hasattr(rhs, "__getitem__"):
@@ -314,6 +314,6 @@ class Vector2(object):
 if __name__ == "__main__":
     
     v1 = Vector2(1, 2)    
-    print v1('yx')
-    print Vector2.from_points((5,5), (10,10))
+    print(v1('yx'))
+    print(Vector2.from_points((5,5), (10,10)))
     

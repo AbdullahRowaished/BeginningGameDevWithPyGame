@@ -73,7 +73,7 @@ class Vector2(object):
     def get_x(self):
         return self._v[0]
     def set_x(self, x):
-        assert isinstance(x, float), "Must be a float"
+#        assert isinstance(x, float), "Must be a float"
         self._v[0] = x
     x = property(get_x, set_x, None, "x component.")
     
@@ -81,7 +81,7 @@ class Vector2(object):
         return self._v[1]
 
     def set_y(self, y):
-        assert isinstance(y, float), "Must be a float"
+#        assert isinstance(y, float), "Must be a float"
         self._v[1] = y
     y = property(get_y, set_y, None, "y component.")
         
